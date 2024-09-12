@@ -1,0 +1,42 @@
+/* Swiper Container Style */
+.swiper-container {
+  position: relative;
+  overflow: hidden;
+}
+
+/* Swiper Slide Style */
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Category Item Style */
+.category-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.category-item img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 14px;
+}
+
+.category-item h3 {
+  margin-top: 10px;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+/* Swiper Navigation and Pagination */
+.swiper-button-next, .swiper-button-prev {
+  color: #d41b1b; /* Customize navigation button color */
+}
+
+.swiper-pagination-bullet {
+  background: #d41b1b; /* Customize pagination bullet color */
+}

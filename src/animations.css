@@ -1,0 +1,196 @@
+
+.image-fixed-size {
+  width: 150px; /* Set a default size, adjust as needed */
+  height: 150px;
+  object-fit: cover;
+}
+
+/* Image container styles */
+.image-rotation-container {
+  width: 700px; /* Fixed size for the rotation container */
+  height: 400px; /* Fixed size for the rotation container */
+  overflow: hidden; /* Hide any overflowing content */
+  position: relative; /* Ensure the images are positioned correctly */
+}
+
+.image-rotation {
+  width: 100%; /* Full width of the container */
+  height: 100%; /* Full height of the container */
+  object-fit: cover; /* Ensure the image covers the container */
+}
+
+/* Custom size for category images */
+.image-categories {
+  width: 200px; /* Custom size for category images */
+  height: 200px;
+  object-fit: cover;
+}
+
+/* Custom size for new launch images */
+.image-new-launches {
+  width: 150px; /* Custom size for new launch images */
+  height: 150px;
+  object-fit: cover;
+}
+
+/* Animation styles */
+.zoom-in {
+  animation: zoomIn 0.5s ease-in-out;
+}
+
+.fade-in {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.fade-out {
+  animation: fadeOut 0.5s ease-in-out;
+}
+
+.zoom-out {
+  animation: zoomOut 0.5s ease-in-out;
+}
+
+/* Keyframes for animations */
+@keyframes zoomIn {
+  from {
+    transform: scale(0.9);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes zoomOut {
+  from {
+    transform: scale(1);
+    opacity: 1;
+  }
+  to {
+    transform: scale(0.9);
+    opacity: 0;
+  }
+}
+/* animations.css */
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999; /* Ensure the overlay is on top */
+}
+
+.popup-content {
+  position: relative;
+  background: white;
+  padding: 16px; /* Reduced padding for smaller size */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 300px; /* Set fixed width */
+  max-width: 90%; /* Responsive width */
+  text-align: center; /* Center text */
+  z-index: 10000; /* Ensure the content is above the overlay */
+}
+
+.popup-image {
+  width: 100%; /* Ensure image fits within the popup */
+  height: auto;
+}
+
+.close-button {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  background: red; /* Button is visible with a red background */
+  color: white; /* White text color */
+  border: none;
+  border-radius: 50%;
+  width: 24px; /* Fixed width */
+  height: 24px; /* Fixed height */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  cursor: pointer; /* Pointer cursor to indicate clickability */
+  z-index: 10001; /* Ensure the button is clickable */
+}
+/* Add this to your animations.css file */
+.transition-transform {
+  transition: transform 0.3s ease-in-out;
+}
+/* animations.css */
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-10%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.slide-in {
+  animation: slideIn 0.3s ease-out forwards;
+}
+/* animations.css */
+.slide-in {
+  transform: translateX(0%);
+}
+
+.slide-out {
+  transform: translateX(100%);
+}
+/* animations.css */
+
+
+.animate-slide-in-left {
+  animation: slide-in-left 0.7s ease-in-out;
+}
+
+/* Transition for hover effects */
+.hover\:scale-110:hover {
+  transform: scale(1.10);
+}
+/* Example animation in animations.css */
+@keyframes slide-in-left {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.animate-slide-in-left {
+  animation: slide-in-left 0.5s ease-out;
+}
+.product-grid {
+  z-index: 60; /* Ensure it's high enough to appear above other elements */
+}
+
+

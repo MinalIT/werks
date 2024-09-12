@@ -1,0 +1,117 @@
+/* Base Colors */
+.bg-gray-100 {
+  background-color: #f7fafc;
+}
+
+.bg-gray-900 {
+  background-color: #1a202c;
+}
+
+.text-gray-900 {
+  color: #1a202c;
+}
+
+.text-gray-100 {
+  color: #f7fafc;
+}
+
+.bg-gray-800 {
+  background-color: #2d3748;
+}
+
+.text-gray-300 {
+  color: #e2e8f0;
+}
+
+.text-gray-600 {
+  color: #718096;
+}
+
+/* Green Colors */
+.bg-green-500 {
+  background-color: #48bb78; /* Green 500 */
+}
+
+.bg-green-600 {
+  background-color: #38a169; /* Green 600 */
+}
+
+.text-green-500 {
+  color: #48bb78; /* Green 500 */
+}
+
+.text-green-700 {
+  color: #2f855a; /* Green 700 */
+}
+
+/* Gray Colors */
+.bg-gray-500 {
+  background-color: #a0aec0;
+}
+
+.bg-gray-600 {
+  background-color: #718096;
+}
+
+.bg-gray-700 {
+  background-color: #4a5568;
+}
+
+/* Hover States */
+.hover\:bg-green-600:hover {
+  background-color: #38a169; /* Green 600 */
+}
+
+.hover\:bg-gray-500:hover {
+  background-color: #a0aec0;
+}
+
+.hover\:bg-gray-600:hover {
+  background-color: #718096;
+}
+
+/* Transitions */
+.transition-transform {
+  transition: transform 0.2s ease-in-out;
+}
+
+.transform {
+  transform: scale(1);
+}
+
+.hover\:scale-105:hover {
+  transform: scale(1.05);
+}
+
+/* Additional Utility */
+.flex-grow {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  max-width: 100%;
+  margin: 0 auto; /* Center the container horizontally */
+}
+
+@keyframes wipeFromTop {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  50% {
+    transform: translateY(10%);
+    opacity: 0.5;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.animate-wipe {
+  animation: wipeFromTop 1s ease-out;
+}
+

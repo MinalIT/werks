@@ -261,6 +261,7 @@ const OrderPage = () => {
   </p>
 </div>
 
+{/* comment */}
 
       {/* Terms & Conditions */}
       <div className="text-center text-sm text-gray-500">
@@ -269,7 +270,7 @@ const OrderPage = () => {
           By placing this order, you agree to our{' '}
           <a href="/Rules" className="text-green-600">Terms and Conditions</a>,{' '}
           <a href="/Privacy" className="text-green-600">Privacy Policy</a>, and{' '}
-          <a href="/Refund" className="text-green-600">Return & Refund Rules</a>.
+          <a href="/Refund" className="text-green-600">Return & Refund Rules</a>. hello
         </p>
       </div>
     </div>

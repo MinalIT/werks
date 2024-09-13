@@ -267,9 +267,9 @@ const OrderPage = () => {
         <p>Total: Negotiable</p>
         <p>
           By placing this order, you agree to our{' '}
-          <a href="/terms" className="text-green-600">Terms and Conditions</a>,{' '}
-          <a href="/privacy" className="text-green-600">Privacy Policy</a>, and{' '}
-          <a href="/refunds" className="text-green-600">Return & Refund Rules</a>.
+          <a href="/Rules" className="text-green-600">Terms and Conditions</a>,{' '}
+          <a href="/Privacy" className="text-green-600">Privacy Policy</a>, and{' '}
+          <a href="/Refund" className="text-green-600">Return & Refund Rules</a>.
         </p>
       </div>
     </div>

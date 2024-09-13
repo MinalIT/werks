@@ -1,6 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Home from './Home';
+//import Home from './Home';
 import Products from './Products';
 import ProductCard from './Productcard'; // Ensure correct casing
 import Manufactures from './Manufactures';
@@ -8,7 +8,8 @@ import Signin from './Signin';
 import SignUpPageM from './SignUpPageM';
 import SignUpPageB from './SignUpPageB';
 import ForgotPasswordPage from './ForgotPasswordPage';
-// import Bag from './Bag'; // Uncomment if needed
+import Privacy from './Privacy'; 
+import Refund from './Refund'; 
 import Maizgrinding from './Maizgrinding'; 
 import Glasscutter from './Glasscutter'; 
 import Feedextruder from './Feedextruder'; 
@@ -185,7 +186,8 @@ function App() {
           <Route path="/Rules" element={<Rules />} />
           <Route path="/PageNotFound" element={<PageNotFound />} />
           <Route path="/Trackorder" element={<Trackorder />} />
-         
+          <Route path="/Privacy" element={<Privacy/>} />
+          <Route path="/Refund" element={<Refund />} />
         </Routes>
       </div>
     </Router>

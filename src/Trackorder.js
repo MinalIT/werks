@@ -11,17 +11,17 @@ const TrackOrderPage = () => {
   const trackingDetails = {
     carrier: 'FedEx',
     trackingNumber: '848329485093',
-    status: 'In Transit',
+    status: 'Order Placed',
     estimatedDelivery: '18 Sep 2024',
-    lastLocation: 'Chicago, IL',
+    lastLocation: 'Gujrat',
     departureTime: '15 Sep 2024, 10:00 AM',
   };
 
   // Tracking status steps (visualization)
   const trackingSteps = [
     { label: 'Order Placed', icon: <FaCheckCircle />, isCompleted: true },
-    { label: 'Shipped', icon: <FaTruck />, isCompleted: true },
-    { label: 'In Transit', icon: <FaShippingFast />, isCompleted: true },
+    { label: 'Shipped', icon: <FaTruck />, isCompleted: false },
+    { label: 'In Transit', icon: <FaShippingFast />, isCompleted: false },
     { label: 'Out for Delivery', icon: <FaMapMarkerAlt />, isCompleted: false },
     { label: 'Delivered', icon: <FaCheckCircle />, isCompleted: false },
   ];
@@ -90,16 +90,16 @@ const TrackOrderPage = () => {
             </p>
             <div className="flex justify-between items-center mt-4">
             <button
-          className="bg-green-600 hover:bg-green-700 text-white px-6 py-2 rounded-lg"
+          className="bg-green-600 hover:bg-green-300 text-white px-6 py-2 rounded-lg"
           onClick={() => navigate('/')} // Correct onClick syntax
         >
-          Track Another Package
+          Home
         </button>
 
 
               
         <button
-          className="bg-gray-100 hover:bg-gray-200 text-gray-700 px-6 py-2 rounded-lg"
+          className="bg-green-600 hover:bg-green-300 text-white px-6 py-2 rounded-lg"
           onClick={() => navigate('/CustomerServices')} // Correct onClick syntax
         >
           Contact Support

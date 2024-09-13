@@ -116,12 +116,7 @@ const OrderPage = () => {
             >
               Track Package
             </button>*/}
-            <button
-  className="bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-lg"
-  onClick={() => Navigate('/Trackorder')}
->
-  Track Package
-</button>
+          
 
           </div>
         </div>
@@ -142,11 +137,16 @@ const OrderPage = () => {
           </button>
 
           <button
-      onClick={OrderConfirm}
-      className="bg-green-600 hover:bg-green-700 text-white px-2 py-2 rounded-lg"
-    >
-      Order Confirmed
-    </button>
+  onClick={() => {
+    OrderConfirm(); // Call the OrderConfirm function
+    Navigate('/Trackorder'); // Then navigate to the Trackorder page
+  }}
+  className="bg-green-600 hover:bg-green-700 text-white px-2 py-2 rounded-lg"
+>
+  Order Confirmed
+</button>
+
+
         </div>
       </div>
 

@@ -360,12 +360,7 @@ function App() {
           >
             Customer Service
           </li>
-          <li
-            className="cursor-pointer py-2 px-4 hover:bg-gray-100"
-            onClick={() => handleOptionClick('/Rules')}
-          >
-            Rules & Regulations
-          </li>
+          
           <li
             className="cursor-pointer py-2 px-4 hover:bg-gray-100"
             onClick={() => handleOptionClick('/Rules')}
@@ -386,15 +381,15 @@ function App() {
           </li>
           <li
             className="cursor-pointer py-2 px-4 hover:bg-gray-100"
-            onClick={() => handleOptionClick('/CustomerServices')}
+            onClick={() => handleOptionClick('/Privacy')}
           >
-            Email Help
+            Privacy And Policy
           </li>
           <li
             className="cursor-pointer py-2 px-4 hover:bg-gray-100"
-            onClick={() => handleOptionClick('/CustomerServices')}
+            onClick={() => handleOptionClick('/Refund')}
           >
-            FAQ
+            Return And Refund Policy
           </li>
           <li
             className="cursor-pointer py-2 px-4 hover:bg-gray-100"
@@ -529,7 +524,7 @@ function App() {
         {/*Buy now*/ }
         <div className='mt-20 mb-20'>
       <h1 className="text-3xl font-bold">Grab Up to 50% Off On Selected Headphones</h1>
-      <button className="bg-green-500 text-white px-10 py-2 rounded-full mt-8 flex items-center" onClick={handleBuyNow}>
+      <button className="bg-green-500 text-white px-10 py-2 rounded-full mt-14 flex items-center" onClick={handleBuyNow}>
         Buy Now <ShoppingCartIcon className="h-5 w-5 ml-2" />
       </button>
 
@@ -783,8 +778,7 @@ function App() {
                         </div>
                     ))}
                 </div>
-            </main>
-               
+            </main> 
               </div>
            
 
@@ -1023,9 +1017,9 @@ function App() {
     <div>
       <h3 className="font-semibold mb-4">Help</h3>
       <ul className="space-y-2 text-md">
-        <li><Link to="/CustomerServices"> FAQ</Link></li>
-        <li><Link to="/CustomerServices"> Contact Us</Link></li>
-        <li><Link to="/CustomerServices"> Submit a Complaint</Link></li>
+        <li><Link to="/CustomerServices"> Customer Services</Link></li>
+        <li><Link to="/Privacy"> Privacy policy</Link></li>
+        <li><Link to="/Refund"> Return and Refund</Link></li>
       </ul>
     </div>
   </div>

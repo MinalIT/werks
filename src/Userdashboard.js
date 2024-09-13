@@ -261,6 +261,7 @@ const OrderPage = () => {
   </p>
 </div>
 
+{/* comment */}
 
       {/* Terms & Conditions */}
       <div className="text-center text-sm text-gray-500">

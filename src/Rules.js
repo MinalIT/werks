@@ -9,7 +9,7 @@ const RulesAndRegulationsPage = () => {
     <div className="bg-gray-100 text-gray-800">
       {/* Header Section */}
       <header className="bg-green-600 text-white text-center py-10">
-        <h1 className="text-4xl font-bold">Rules and Regulations</h1>
+        <h1 className="text-4xl font-bold">Terms and Conditions</h1>
         <p className="mt-4 text-lg">
           Important guidelines for both users and buyers to follow.
         </p>
